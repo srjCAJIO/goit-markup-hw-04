@@ -188,7 +188,7 @@ a {
 /*-------------- MAIN --------------*/
 
 .hero {
-    background-color: var(--backgndnoimg);
+    /* background-color: var(--backgndnoimg); */
     text-align: center;
 }
 
@@ -328,7 +328,9 @@ a {
 .team-member {
     margin-left: var(--mainspacer);
     width: calc((100% - (var(--mainspacer) * 3)) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
     font-size: 16px;
@@ -521,7 +523,9 @@ a {
 .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--brandblue);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* галерея */
@@ -541,10 +545,14 @@ a {
 
 .project-link {
     display: block;
+    color: inherit;
 }
 
-.project-link:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project:nth-child(3n+1) {
